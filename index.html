@@ -1,86 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Document</title>
-       <link rel="stylesheet" href="CSS/bootstrap.css" href="CSS/bootstrap.min.css" href="CSS/styles.css">
-   </head>
-   <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="javascript:void(0)"> MENU</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)">HOME </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)">FAVORITO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)">HISTORIAL</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search">
-            <button class="btn btn-primary" type="button">Search</button>
-          </form>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <div class="exterior">
+        <div class="texto">
+            <h1>Crea tu cuenta</h1>
+            <p>Unete a nuestra comunidad y difruta de todos los beneficios que <br> ofrecemos. Completa el formulario para empezar</p>
         </div>
-      </div>
-    </nav>
-<div class="container">
-  <div  class="row">
-    <div class="col-8">
-      <div class="card">
-        <video width="800" controls>
-          <source src="imagenes/video 1.mp4" type="video/mp4">
-        </video>
-        <div class="col-4">
-          <br>
-          <audio  controls>
-            <source src="imagenes/cancion.mp3" type="audio/mpeg">
-          </audio>
-          <br>
-          <audio  controls>
-            <source src="imagenes/cancion.mp3" type="audio/mpeg">
-          </audio>
-          <br>
-          <a href="imagenes/cancion.mp3"> DESCARGAR </a>
-        </div>
-       
-
-      </div>
-    </div>
-
-    <div class="col-4">
-      <div class="card" style="width:500px">
-        <iframe width="400" height="300" src="https://www.youtube.com/embed/-ZInT4p9hH8?si=ENC4RF-FuV37nReq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <div class="card-body">
-          <h4 class="card-title">John Doe</h4>
-          <p class="card-text">Some example text.</p>
-          <a href="#" class="btn btn-primary">See Profile</a>
-        </div>
+      <div class="contenido">
         
-        <div class="col-4">
-          <div class="card" style="width:500px">
-            <iframe width="400" height="300" src="https://www.youtube.com/embed/-ZInT4p9hH8?si=ENC4RF-FuV37nReq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <div class="card-body">
-              <h4 class="card-title">John Doe</h4>
-              <p class="card-text">Some example text.</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
-            </div>
-          </div>
+            <form action="datos.php" method="get">
+                <fieldset id="General">
+                    <p class="registrate">Registrate</p>
+                    <label>Nombre Completo</label><br>
+                    <input type="Text" name="Nombre" id="Nombre" required placeholder="Tu nombre completo"><br><br>
+                    <label>Correo Electronico</label><br>
+                    <input type="email" name="Email" id="Email" required placeholder="Ingresa tu Correo Electronico"><br><br>
+                    <label>Correo Electronico</label><br>
+                    <input type="Text" name="Contraseña" id="Contraseña" required placeholder="Cre una contraseña"><br><br>
+                    <label>Fecha De Nacimiento</label><br>
+                    <input type="date" name="fecha" id="fecha"><br><br>
+                    <label for="opcion">Genero</label><br>
+                    <select id="opcion" name="opcion" required>
+                    <option value="" disabled selected> selecione una opcion </option>
+                    <option value="opcion" >Masculino</option>
+                    <option value="opcion" >Femenino</option>
+                    </select><br><br>
+                    <label>Telefono</label><br>
+                    <input type="number" name="numero" id="numero" required placeholder="Ejemplo: +50512345678"><br><br>
+                    <label>Foto de perfil</label>
+                    <div class="selecionar">
+                    <button class="select-button">Seleccionar un archivo</button>
+                    <p class="select">sin archivos seleccionados</p>
+                    </div><br><br>
+                    <button class="boton">Registrate</button>
+                </fieldset>
+            
         </div>
-      </div>
-      </div>
-    </div>
   </div>
-  
-</div>
-    <script src="JS/bootstrap.bundle.js" src="JS/bootstrap.bundle.min.js" src="JS/bootstrap.js" src="JS/bootstrap.min.js"></script>
-   </body>
+</body>
 </html>

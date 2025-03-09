@@ -1,0 +1,90 @@
+.exterior{
+    margin: 0; /* Elimina el margen por defecto */
+    background-image: url('Captura\ de\ pantalla\ 2025-01-26\ 083933.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-position: center; /* Centra la imagen */
+    font-family: Arial, sans-serif; /* Cambia la fuente */
+    color: black; /* Texto blanco para contraste */
+    width: 1070px;
+    margin-left: 150px;
+    padding-top: 1px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    display: flex; 
+}
+body{
+    background: linear-gradient(135deg, #2ec4b6, #0f4c75);
+    }
+    .texto{
+        margin-top: 250px;
+        color: white;
+        margin-left: 20px ;
+    }
+    .texto p{
+        font-size: 13px;
+    }
+    .contenido {
+        position: relative; /* Asegura que el contenido esté encima */
+        padding: px; /* Espaciado interno del contenedor */
+        background: rgba(255, 255, 255, 0.274); /* Fondo blanco con 80% de opacidad */
+        border-radius: 10px; /* Bordes redondeados */
+        max-width: 500px; /* Ancho máximo del contenedor */
+        margin-left: 100px;
+        /*text-align: center;  Centra el texto */
+        height: 600px;
+        margin-top: 15px;
+    }
+    .registrate{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    select{
+        width: 462px;
+        padding-left: 10px;
+        padding-top: 3px;
+        height: 30px;
+
+    }
+    label{
+        font-size: 11px;
+        font-weight: bold;
+        
+    }
+    input{
+        width: 450px;
+        padding-left: 10px;
+        padding-top: 3px;
+        height: 20px;
+    }
+    .selecionar{
+        border: 1px solid white;
+        width: 459px;
+    }
+    .select-button{
+        margin-top: 8px;
+        margin-left: 4px;
+    }
+    .select{
+        font-size: 11px;
+        font-weight: bold;
+        margin-left: 160px;
+        margin-top: -16px;
+    }
+    .boton{
+        background-color: #0f4c75;
+        padding: 8px;
+        color: white;
+        width: 462px;
+        border: none;
+
+    }
+    fieldset{
+        border: none;
+    }
+
+    @media (max-width: 725px){
+        .texto{
+            display: none;
+        }
+    }
